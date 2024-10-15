@@ -35,6 +35,6 @@ let flavorsDict = {};
 
 flavorsDict = tally(flavorsDict, flavorsArray);
 
-for( const key in flavorsDict) {
+for(const key in flavorsDict) {
   console.log(`Flavor: ${key}, Scoops: ${flavorsDict[key]}`);
 }
