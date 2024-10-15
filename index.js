@@ -10,7 +10,6 @@
 
 
 
-
 const tally = (newArray) => {
 
   let newObj = {};
@@ -18,6 +17,7 @@ const tally = (newArray) => {
   // creates keys for newObj and sets their values to 0
   for(let i = 0; i < newArray.length; i++){
 
+    newArray[i] = newArray[i].trim().toLowerCase();
     newObj[newArray[i]] = 0;
   
   }
@@ -26,8 +26,8 @@ const tally = (newArray) => {
   for(let i = 0; i < newArray.length; i++){
     
     newObj[newArray[i]] += 1;
-  }
 
+  }
 
   return newObj;
 
