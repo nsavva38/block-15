@@ -12,7 +12,7 @@ const tally = (newArray) => {
 
   let newObj = {};
 
-  // creates keys for newDict and sets their values to 0
+  // creates keys for newObj and sets their values to 0
   for(let i = 0; i < newArray.length; i++){
 
     newObj[newArray[i]] = 0;
