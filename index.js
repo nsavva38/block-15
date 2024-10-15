@@ -22,6 +22,8 @@ const tally = (newDict, newArray) => {
   }
 
 
+  return newDict;
+
 }
 
 
@@ -31,8 +33,7 @@ const flavorsArray = input.split(`,`);
 
 let flavorsDict = {};
 
-
-tally(flavorsDict, flavorsArray);
+flavorsDict = tally(flavorsDict, flavorsArray);
 
 for( const key in flavorsDict) {
   console.log(`Flavor: ${key}, Scoops: ${flavorsDict[key]}`);
