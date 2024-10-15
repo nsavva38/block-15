@@ -8,6 +8,9 @@
 
 // loop through object and tally
 
+
+
+
 const tally = (newArray) => {
 
   let newObj = {};
