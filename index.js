@@ -18,6 +18,7 @@ const tally = (newArray) => {
   for(let i = 0; i < newArray.length; i++){
 
     newArray[i] = newArray[i].trim().toLowerCase();
+    newArray[i] = newArray[i][0].toUpperCase() + newArray[i].slice(1);
     newObj[newArray[i]] = 0;
   
   }
