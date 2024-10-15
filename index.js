@@ -12,7 +12,7 @@ const tally = (newDict, newArray) => {
 
   for(let i = 0; i < newArray.length; i++){
 
-    newDict[flavorsArray[i]] = 0;
+    newDict[newArray[i]] = 0;
   
   }
   
