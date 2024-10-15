@@ -8,14 +8,18 @@
 
 // loop through object and tally
 
-const tally = (newDict, newArray) => {
+const tally = (newArray) => {
 
+  let newDict = {};
+
+  // creates keys for newDict and sets their values to 0
   for(let i = 0; i < newArray.length; i++){
 
     newDict[newArray[i]] = 0;
   
   }
   
+  // puts values to the keys
   for(let i = 0; i < newArray.length; i++){
     
       newDict[newArray[i]] += 1;
@@ -31,9 +35,7 @@ const input = prompt(`Enter flavors seperated by commas: `, `vanilla,vanilla,van
 
 const flavorsArray = input.split(`,`);
 
-let flavorsDict = {};
-
-flavorsDict = tally(flavorsDict, flavorsArray);
+flavorsDict = tally(flavorsArray);
 
 for(const key in flavorsDict) {
   console.log(`Flavor: ${key}`);
