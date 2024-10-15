@@ -10,23 +10,23 @@
 
 const tally = (newArray) => {
 
-  let newDict = {};
+  let newObj = {};
 
   // creates keys for newDict and sets their values to 0
   for(let i = 0; i < newArray.length; i++){
 
-    newDict[newArray[i]] = 0;
+    newObj[newArray[i]] = 0;
   
   }
   
   // puts values to the keys
   for(let i = 0; i < newArray.length; i++){
     
-      newDict[newArray[i]] += 1;
+    newObj[newArray[i]] += 1;
   }
 
 
-  return newDict;
+  return newObj;
 
 }
 
@@ -35,10 +35,10 @@ const input = prompt(`Enter flavors seperated by commas: `, `vanilla,vanilla,van
 
 const flavorsArray = input.split(`,`);
 
-flavorsDict = tally(flavorsArray);
+flavorsObj = tally(flavorsArray);
 
-for(const key in flavorsDict) {
+for(const key in flavorsObj) {
   console.log(`Flavor: ${key}`);
-  console.log(`Scoops: ${flavorsDict[key]}`);
+  console.log(`Scoops: ${flavorsObj[key]}`);
   console.log(``);
 }
